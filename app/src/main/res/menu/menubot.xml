@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        />
+    <item
+        android:id="@+id/item_zakat"
+        android:title="Zakat"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        />
+    <item
+        android:id="@+id/item_startCam"
+        android:title="Start Campaign"
+        android:icon="@drawable/ic_all_inclusive_black_24dp"
+        />
+    <item
+        android:id="@+id/item_profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_face_black_24dp"
+        />
+
+</menu>

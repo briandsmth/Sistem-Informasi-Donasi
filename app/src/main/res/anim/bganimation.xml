@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    android:interpolator="@android:anim/accelerate_interpolator"
+    >
+
+    <translate
+        android:fromYDelta="0%"
+        android:toYDelta="30%p"
+        android:duration="1000"
+        />
+</set>

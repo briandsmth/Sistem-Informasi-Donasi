@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "933648961389",
+    "firebase_url": "https://sistem-informasi-donasi-online.firebaseio.com",
+    "project_id": "sistem-informasi-donasi-online",
+    "storage_bucket": "sistem-informasi-donasi-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933648961389:android:00c79937d12e7bf4de9464",
+        "android_client_info": {
+          "package_name": "com.briand.sehatdonasionline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933648961389-htlp7u0e44sdtc284s07sld7cnkosqh2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.briand.sehatdonasionline",
+            "certificate_hash": "857620735e7c7a579474fc8f9bd2dfcb4a8b85ca"
+          }
+        },
+        {
+          "client_id": "933648961389-ictquq7tsnbedp6svm9vai9v8tiblrdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1-BGyjHSfx7_W40uO5RGxgbmT8oXrjNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933648961389-ictquq7tsnbedp6svm9vai9v8tiblrdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
