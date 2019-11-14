@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".zakatActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ZAKAT"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Simpanan"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'...dan orang-orang yang menyimpan emas dan perak (termasuk tabungan dan deposito) dan tidak menafkahkannya pada jalan Allah, Maka beritahukannlah kepada mereka,(Bahwa mereka akan mendapat siksa yang pedih).' (QS. At-Taubah(9): 34) "
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/cal_simpanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Zakat Simpanan"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <Button
+                android:id="@+id/btn_simpanan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="BAYAR"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Penghasilan"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat penghasilan adalah zakat yang di keluarkan dari penghasilan ketika telah mencapai nishab"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/cal_penghasilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Zakat Penghasilan"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <Button
+                android:id="@+id/btn_pengahasilan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="BAYAR"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Emas dan Perak"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hadits Nabi SAW 'Tidak ada seorangpun yang mempunyai emas dan perak yang dia tidak berikan zakatnya, melainkan pada hari kiamat dijadikan hartanya itu beberapa keping api neraka dan di setrikakan pada punggung dan jidatnya'.(HR. Muslim), dan ijma ulama."
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/cal_Emas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Zakat Emas dan Perak"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <Button
+                android:id="@+id/btn_perhiasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="BAYAR"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Perdagangan"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="'Rasulullah SAW memerintahkan kepada kami agar mengeluarkan zakat dari semua yang kami persiapkan untuk berdagang'"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:id="@+id/cal_perdagangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kalkulator Pedagangan"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <Button
+                android:id="@+id/btn_perdagangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="BAYAR"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Fitrah"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat fitrah ialah zakat yang dikeluarkan bertepatan dengan momen bulan Ramadhan dan juga hari Raya Idul Fitri, yang diwajibkan kepada setiap diri orang islam baik anak kecil atau dewasa, lelaki atau wanita, miskin atau kaya, merdeka atau hamba sahaya."
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"/>
+
+            <Button
+                android:id="@+id/btn_fitrah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:text="BAYAR"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
