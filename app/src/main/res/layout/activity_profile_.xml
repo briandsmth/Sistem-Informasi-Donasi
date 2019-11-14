@@ -125,6 +125,18 @@
 
     </ScrollView>
 
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold|italic"
+        android:text="LOG OUT"
+        android:background="@color/colorPrimary"
+        />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         app:srcCompat="@drawable/ic_edit"
@@ -134,5 +146,10 @@
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"
         android:layout_alignParentRight="true"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proggressBarProfile"/>
 
 </RelativeLayout>

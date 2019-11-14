@@ -1,12 +1,5 @@
 package com.briand.sehatdonasionline;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
@@ -16,10 +9,10 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.IInterface;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -27,7 +20,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -63,6 +62,8 @@ public class profile_Activity extends AppCompatActivity {
     ImageView avatarIv, coveIv;
     TextView tvNama, tvEmail, tvPhone, tvAlamat;
     FloatingActionButton fab;
+
+    Button btnLogout;
 
     private ProgressBar uploadProggress;
 
@@ -101,7 +102,19 @@ public class profile_Activity extends AppCompatActivity {
         tvEmail = findViewById(R.id.profile_email);
         tvPhone = findViewById(R.id.profile_phone);
         tvAlamat = findViewById(R.id.profile_alamat);
+        uploadProggress = findViewById(R.id.proggressBarProfile);
         fab = findViewById(R.id.fab);
+        btnLogout = findViewById(R.id.btn_logout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                finish();
+                Intent login = new Intent(profile_Activity.this, LoginActivity.class);
+                startActivity(login);
+            }
+        });
 
         pd = new ProgressDialog(profile_Activity.this);
 
@@ -153,6 +166,8 @@ public class profile_Activity extends AppCompatActivity {
 
             }
         });
+
+
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,6 +3,7 @@ package com.briand.sehatdonasionline;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -66,8 +67,7 @@ public class ItemsActivity extends AppCompatActivity implements RecyclerAdapter.
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.item_home:
-                        Intent intent = new Intent(ItemsActivity.this, ItemsActivity.class);
-                        startActivity(intent);
+
                         break;
                     case R.id.item_startCam:
                         Intent campaign = new Intent(ItemsActivity.this, startCampaign.class);
@@ -79,7 +79,9 @@ public class ItemsActivity extends AppCompatActivity implements RecyclerAdapter.
                         startActivity(profileView);
                         break;
                     case R.id.item_zakat:
-                        //Under the Maintance
+                        actionBar.setTitle("Zakat");
+                        Intent zakatView = new Intent(ItemsActivity.this, zakatActivity.class);
+                        startActivity(zakatView);
                         break;
                 }
                 return true;

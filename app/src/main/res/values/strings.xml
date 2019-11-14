@@ -21,6 +21,10 @@
     <string name="text_campaign">START CAMPAIGN</string>
     <string name="uploadImg">Upload Image Penderita</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="method">
+        <item>Choose method</item>
+        <item>BCA Virtual Account</item>
+        <item>BRI Virtual Account</item>
+        <item>BNI Virtual Account</item>
+    </string-array>
 </resources>

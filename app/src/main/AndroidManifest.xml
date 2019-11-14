@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile_Activity"></activity>
+        <activity android:name=".calculatorPerdagangan"></activity>
+        <activity android:name=".calculatorPerhiasan" />
+        <activity android:name=".calculatorPenghasilan" />
+        <activity android:name=".calculatorSimpanan" />
+        <activity android:name=".paymentView" />
+        <activity android:name=".donateTransaksi" />
+        <activity android:name=".zakatActivity" />
+        <activity android:name=".profile_Activity" />
         <activity android:name=".ItemsActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".startCampaign" />
@@ -24,9 +31,9 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>

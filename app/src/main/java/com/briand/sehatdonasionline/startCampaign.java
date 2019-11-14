@@ -1,16 +1,10 @@
 package com.briand.sehatdonasionline;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.ContentResolver;
 import android.content.Intent;
 import android.net.Uri;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -19,9 +13,14 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -134,19 +133,24 @@ public class startCampaign extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Uri uri) {
 
+                                    FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
+                                    FirebaseUser user = firebaseAuth.getCurrentUser();
+
+                                    String uid = user.getUid();
+
                                     HashMap<String, String> hashMap = new HashMap<>();
+                                    hashMap.put("uid", uid);
                                     hashMap.put("imageurl", String.valueOf(uri));
                                     hashMap.put("nama", namaEdit.getText().toString());
                                     hashMap.put("goals", goalsEdit.getText().toString());
                                     hashMap.put("story", storyEdit.getText().toString());
 
-                                    String uploadId = databaseReference.push().getKey();
-
                                     FirebaseDatabase database = FirebaseDatabase.getInstance();
 
                                     DatabaseReference databaseReference = database.getReference("Campaign_uploaded");
 
-                                    databaseReference.child(uploadId).setValue(hashMap);
+                                    databaseReference.child(uid).setValue(hashMap);
 
                                 }
                             });

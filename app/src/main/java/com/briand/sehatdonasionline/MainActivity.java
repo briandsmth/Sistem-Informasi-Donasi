@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(view == donate_menu){
             finish();
-            startActivity(new Intent(this, ItemsActivity.class));
+            startActivity(new Intent(this, Register_Activity.class));
         }
     }
 }
