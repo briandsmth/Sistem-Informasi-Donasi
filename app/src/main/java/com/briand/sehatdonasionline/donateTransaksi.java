@@ -74,6 +74,7 @@ public class donateTransaksi extends AppCompatActivity {
                         next.putExtra("virtual_key", virtual);
                         next.putExtra("tanggal_key", tanggal);
                         startActivity(next);
+
                     }
 
                     @Override
