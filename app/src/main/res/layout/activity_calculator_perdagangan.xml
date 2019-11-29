@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".calculatorPerdagangan">
 
@@ -96,15 +97,19 @@
         android:layout_marginStart="16sp"
         android:layout_marginEnd="16sp"/>
 
-    <Button
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
         android:id="@+id/btn_hit_perdagangan"
-        android:layout_width="wrap_content"
+        style="@style/loginButton"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="HITUNG"
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="16dp"
-        android:layout_gravity="center"/>
+        android:layout_marginTop="20dp"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -134,14 +139,17 @@
         android:layout_marginTop="30dp"
         android:layout_gravity="center"/>
 
-    <Button
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
         android:id="@+id/btn_bayar_perdagangan"
-        android:layout_width="match_parent"
+        style="@style/loginButton"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="BAYAR"
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
 
 </LinearLayout>
