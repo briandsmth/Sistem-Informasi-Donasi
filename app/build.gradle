@@ -50,6 +50,8 @@ dependencies {
     implementation 'com.android.support:design:29.0.0'
 
     implementation 'com.jjoe64:graphview:4.2.2'
+
+    implementation 'br.com.simplepass:loading-button-android:1.14.0'
 }
 
 apply plugin: 'com.android.application'
