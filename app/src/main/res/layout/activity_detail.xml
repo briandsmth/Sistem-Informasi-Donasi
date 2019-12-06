@@ -78,12 +78,13 @@
             app:spinning_bar_padding="6dp"
             app:spinning_bar_width="4dp" />
 
-<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--            android:id="@+id/fab"-->
-<!--            app:srcCompat="@drawable/ic_edit"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_margin="10dp" />-->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            app:srcCompat="@drawable/ic_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
 
         <androidx.core.widget.ContentLoadingProgressBar
             android:layout_width="match_parent"
